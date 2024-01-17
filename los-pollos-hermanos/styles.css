@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;500&family=Nunito+Sans:ital,opsz,wght@1,6..12,200&family=Poppins:wght@300&family=Rethink+Sans:wght@500&family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/ji-burrito');
 * {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Recursive', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -96,7 +96,8 @@ header img {
 }
 
 .image-text #lospolloshermanos {
-    font-family: 'Young Serif', serif;
+    /* font-family: 'Young Serif', serif; */
+    font-family: 'JI Burrito', sans-serif;                                              
     font-size: 40px;
     letter-spacing: 4px;
     background-color: #f4d301;
@@ -135,7 +136,7 @@ header img {
     box-shadow: 2px 2px #f4d301;
 }
 
-.image-text button {
+#button {
     background-color: #f4d301;
     padding: 10px;
     border: 2px solid #f4d301;
@@ -146,7 +147,7 @@ header img {
     text-shadow: 0.5px 0.5px black;
 }
 
-.image-text button:hover {
+#button:hover {
     background-color: red;
     box-shadow: none;
     transition: 0.5s ease;
@@ -157,14 +158,15 @@ header img {
 
 #about-us {
     background-color: red;
-    height: 100vh;
+    /* height: 100vh; */
     margin-top: -5px;
     padding: 20px;
     text-align: center;
 }
 
 #section-heading {
-    font-family: 'Young Serif', serif;
+    /* font-family: 'Young Serif', serif; */
+    font-family: 'JI Burrito', sans-serif;                                            
     font-size: 30px;
     letter-spacing: 4px;
     background-color: #f4d301;
@@ -309,9 +311,10 @@ header img {
 
 #menu {
     background-color: #f4d301;
-    height: 180vh;
+    /* height: 180vh; */
     margin-top: -5px;
     padding: 20px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
@@ -369,14 +372,46 @@ header img {
 
     width: 100%;
 }
-
-#footer {
-    height: 60vh;
+#training {
     display: flex;
     flex-direction: column;
+    background-color: red;
+    /* height: 140vh; */
+    margin-top: -5px;
+    padding: 20px;
+    text-align: center;
+}
+#training iframe {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 500px;
+}
+#training #button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 25%;
+    background-color: #f4d301;
+    padding: 10px;
+    border: 2px solid #f4d301;
+    font-size: medium;
+    box-shadow: 4px 4px white;
+    transition: 0.5s ease;
+    color: red;
+    text-shadow: 0.5px 0.5px black;
+}
+#training #button:hover {
+    background-color: white;
+    box-shadow: none;
+    transition: 0.5s ease;
+    text-shadow: 0.5px 0.5px black;
+    /* text-decoration: underline; */
+}
+#footer {
     padding: 20px;
     border-top: 4px solid white;
-    background-color: red;
+    background-color: #f4d301;
     text-align: center;
     justify-content: center;
     margin-bottom: 0px;
@@ -384,12 +419,12 @@ header img {
 }
 
 #footer img {
-    width: 10%;
+    width: 50%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 100px;
+    margin-bottom: -5px;
     border-top: 2px solid white;
-    margin-top: -200px;
 }
 
 #footer .footer-container {
@@ -399,7 +434,10 @@ header img {
 }
 
 #footer #section-heading {
+    background-color: red;
+    color: #f4d301;
     font-size: 1.2rem;
+    margin-top: -5px;
 }
 
 #footer .social-icons {
@@ -411,39 +449,165 @@ header img {
     color: #f4d301;
     transition: 1s ease;
 }
-
+#footer .social-icons #fb {
+    color: #316FF6;
+}
+#footer .social-icons #insta {
+color: darkred;
+}
+#footer .social-icons #yt {
+    color: #FF0000;
+}
+#footer .social-icons #x{
+   color: black;
+}
 #footer .social-icons #fb:hover {
     transition: 1s ease;
-    color: white;
     transform: translateY(-5px) scale(1.02);
 }
 
 #footer .social-icons #insta:hover {
     transition: 1s ease;
-    color: white;
     transform: translateY(-5px) scale(1.02);
 }
 
 #footer .social-icons #yt:hover {
     transition: 1s ease;
-    color: white;
     transform: translateY(-5px) scale(1.02);
 }
 
 #footer .social-icons #x:hover {
     transition: 1s ease;
-    color: white;
     transform: translateY(-5px) scale(1.02);
 }
-#footer .location {
+
+ #footer #location  {
+    font-size: medium;
+    width: 40%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.587);
+    border-left: 2px solid rgba(255, 0, 0, 0.587);
+    border-right: 2px solid rgba(255, 0, 0, 0.587);
+    font-family: 'Recursive', sans-serif;
+}
+#footer #button {
+    background-color: red;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: 2px solid red;
+    font-size: medium;
+    box-shadow: 4px 4px white;
+    transition: 0.5s ease;
+    color: #f4d301;
+    text-shadow: 0.5px 0.5px black;
+}
+
+#footer #button:hover {
+    background-color: white;
+    box-shadow: none;
+    transition: 0.5s ease;
+    color: #f4d301;
+    text-shadow: 0.5px 0.5px black;
+    /* text-decoration: underline; */
+}
+
+#footer #credits {                                          
+    font-size: large;
+    letter-spacing: 4px;
+    background-color: #f4d301;
+    padding: 5px;
+    border: 3px solid rgba(255, 0, 0, 0.587);
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    color: red;
+    text-shadow: 2px 2px 2px rgb(20, 20, 101);
+    font-family: 'Recursive', sans-serif;
+}
+#footer #credits a {
+    text-decoration: none;
+    color: white;
+
+}
+#footer #credits a:hover {
+    transition: 0.5s ease;
+    color: white;
+    text-decoration: underline;
+}
+
+/* Dialogue Container  */
+#dialogContainer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: red;
+    border: 5px solid #f4d301;
+    box-shadow: 5px 5px white;
+    z-index: 9999;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    animation: fadeIn 1s ease;
+}
+#dialogContainer form {
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
+    align-items: center;
+    padding: 5px;
+    gap: 10px; /* Adjusted the gap between form elements */
 }
-#training {
-    background-color: red;
-    height: 140vh;
-    margin-top: -5px;
-    padding: 20px;
+
+#dialogContainer form label {
+    width: 80%;
+    margin-bottom: -5px;
+}
+
+#dialogContainer form input,
+#dialogContainer form textarea {
+    width: 80%;
+    padding: 5px; /* Adjusted padding for the inputs */
+    background-color: white;
+    border: 1px solid white;
+    box-shadow: 4px 4px #f4d301;
+}
+#dialogContainer img {
+    width: 40%;
+}
+#dialogContainer h2 {
     text-align: center;
+    text-decoration: underline;
+}
+#dialogClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+ #dialogContainer form #send-button {
+    background-color: #f4d301;
+    padding: 10px;
+    border: 2px solid #f4d301;
+    font-size: medium;
+    box-shadow: 4px 4px white;
+    transition: 0.5s ease;
+    color: red;
+    text-shadow: 0.5px 0.5px black;
+    margin-top: 5px;
+}
+
+#dialogContainer form #send-button:hover {
+    background-color: red;
+    box-shadow: none;
+    transition: 0.5s ease;
+    color: white;
+    text-shadow: 0.5px 0.5px black;
+    /* text-decoration: underline; */
 }
