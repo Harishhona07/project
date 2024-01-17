@@ -37,6 +37,18 @@
     }
     
 }
+@keyframes fadeOut {
+    0%{
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+    
+}
 @keyframes changeImage {
     from {
         background-image: url(assets/methlab.jpg);
