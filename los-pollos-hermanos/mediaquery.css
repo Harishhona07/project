@@ -69,11 +69,11 @@
         /* margin-left: 0px; */
     }
     .sectionContainer1 #message {
-        margin: 0;
+        margin: -10px;
         font-size: large;
     }
     #about-us {
-        height: 190vh;
+        height: 100vh;
         padding: 5px;
     }
     #section-heading {
@@ -96,13 +96,13 @@
     }
     .text-content #description {
         width: 100%;
-        margin: 0;
+        margin: -10px;
         box-shadow: 4px 4px white;
         padding: 10px;
         font-size: large;
     }
     #menu {
-        height: 220vh;
+        height: 120vh;
         padding:10px;
         
     }
@@ -128,6 +128,19 @@
     }
     #menu .image-container .element p {
         font-size: small;
+    }
+    #training {
+        height: 50vh;
+    }
+    #training iframe {
+        width: 100%;
+        height: 30vh;
+    }
+    #footer img {
+        width: 25%;
+    }
+    #footer .location {
+        font-size: 1.2rem;
     }
 
 }
