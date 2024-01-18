@@ -585,7 +585,7 @@ color: darkred;
     width: 40%;
 }
 #dialogContainer h2 {
-    text-align: center;
+    text-align: center; 
     text-decoration: underline;
 }
 #dialogClose {
