@@ -175,7 +175,7 @@ header img {
     margin-left: auto;
     margin-right: auto;
     color: red;
-    text-shadow: 2px 2px 2px rgb(20, 20, 101);
+    text-shadow: 2px 2px 2px white;
     box-shadow: 4px 4px 2px white;
 }
 
@@ -218,12 +218,18 @@ header img {
     color: #f4d301;
 }
 
-.sectionContainer1 #logo-img {
+/* .sectionContainer1 #logo-img {
     width: 40%;
     height: 40%;
     border: 2px solid white;
     border-radius: 400px;
 }
+.sectionContainer1 #logo-img2 {
+    width: 40%;
+    height: 40%;
+    border: 2px solid white;
+    border-radius: 400px;
+} */
 
 .sectionContainer1 .text-content {
     color: white;
@@ -288,6 +294,13 @@ header img {
     height: 50%;
     border: 2px solid white;
 }
+ #logo-img2 {
+    width: 30%;
+    height: 50%;
+    border: 4px solid white;
+    box-shadow: 4px 4px #f4d301;
+    transition: opacity 0.5s ease-in-out;
+}
 
 .sectionContainer2 .text-content {
     color: white;
@@ -351,10 +364,11 @@ header img {
     transform: translateY(-5px);
     transition: 0.5s ease;
 }
-
 #menu .image-container .element:hover>#price {
     text-decoration: underline;
     font-weight: bolder;
+    color: red;
+    text-shadow: 1px 1px 1px white;
 }
 
 #menu .image-container .element img {
@@ -383,6 +397,9 @@ header img {
     margin-top: -5px;
     padding: 20px;
     text-align: center;
+}
+#training #section-heading {
+    margin-top: 0;
 }
 #training iframe {
     margin-left: auto;
@@ -543,7 +560,9 @@ color: darkred;
     color: white;
     text-decoration: underline;
 }
-
+#footer .footer-container #section-heading {
+    text-shadow: 2px 2px 2px rgb(20, 20, 101);
+}
 /* Dialogue Container  */
 #dialogContainer {
     display: none;
