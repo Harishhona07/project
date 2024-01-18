@@ -80,7 +80,7 @@
         width: 80%;
     }
     .sectionContainer2 {
-        flex-direction: column;
+        flex-direction: column-reverse;
         display: flex;
         justify-content: space-evenly;
         padding: 40px;
