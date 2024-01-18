@@ -75,7 +75,7 @@
           <img id="logo-img" src="assets/los-pollos-welcome.jpg" alt="" />           
         </div>
         <div class="sectionContainer2">
-          <img id="logo-img" src="assets/lalo-nacho-gus.png" alt="">
+          <img id="logo-img2" src="assets/lalo-nacho-gus.png" alt="">
           <div class="text-content">
             <h2 id="heading">Satisfied Customers</h2>
         <p id="description">
@@ -92,33 +92,36 @@
         <div class="image-container">
           <div class="element">
             <img src="assets/combo1.jpg" alt="" />
-            <p>Chicken Burger 1</p>
-            <p id="price">4.99$</p>
-          </div>
-          <div class="element">
-            <img src="assets/combo2.jpg" alt="" />
-            <p>Chicken Burger 1</p>
-            <p id="price">4.99$</p>
+            <p>Los Pollos Combo 1</p>
+            <p id="price">$7.99</p>
           </div>
           <div class="element">
             <img src="assets/combo3.jpg" alt="" />
-            <p>Chicken Burger 1</p>
-            <p id="price">4.99$</p>
+            <p>Los Pollos Combo 2</p>
+            <p id="price">$7.99</p>
           </div>
           <div class="element">
-            <img src="assets/comb05.jpg" alt="" />
-            <p>Chicken Burger 1</p>
-            <p id="price">4.99$</p>
+            <img src="assets/combo2.jpg" alt="" />
+            <p>Large Chicken Burger</p>
+            <p id="price">$4.99</p>
+          </div>
+        
+          <div class="element">
+            <img  src="assets/comb05.jpg" alt="" />
+            <p>Crispy Fried Chicken</p>
+            <p id="price">5.99$</p>
           </div>
           <div class="element">
-            <img id="special-img" src="assets/chicken burger.jpg" alt="" />
-            <p>Chicken Burger 1</p>
-            <p id="price">4.99$</p>
+            <img id="special-item" onmouseover="dangerItem()" onmouseout="normalItem()" src="assets/chicken burger.jpg" alt="" />
+            <div id="special-itemDetails">
+            <p>Large Chicken Burger x 2</p>
+            <p id="price">$7.50</p>
+            </div>
           </div>
           <div class="element">
             <img src="assets/combo4.jpg" alt="" />
-            <p>Chicken Burger 1</p>
-            <p id="price">4.99$</p>
+            <p>Crispy Chicken Nuggets</p>
+            <p id="price">5.99$</p>
           </div>
         </div>
       </section>
@@ -171,8 +174,33 @@
       src="https://kit.fontawesome.com/ee7595d267.js"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js">
-     
+    <script src="script.js"></script>
+    <script>
+      // Array of image URLs
+      var imageUrls = [
+        'assets/lalo-nacho-gus.png',
+          'assets/customer2.png',
+          'assets/customer3.jpeg',
+          'assets/customer4.png',
+          // Add more image URLs as needed
+      ];
+  
+      var currentIndex = 0;
+      var imageElement = document.getElementById('logo-img2');
+  
+      function changeImage() {
+          // Change the source of the image element
+          imageElement.src = imageUrls[currentIndex];
+  
+          // Increment the index for the next image
+          currentIndex = (currentIndex + 1) % imageUrls.length;
+  
+          // Call the function again after 8 seconds
+          setTimeout(changeImage, 2000);
+      }
+  
+      // Start the image-changing process
+      changeImage();
   </script>
   </body>
 </html>
