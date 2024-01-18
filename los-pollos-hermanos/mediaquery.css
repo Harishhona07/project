@@ -165,5 +165,13 @@
     #dialogContainer img {
         width: 90%;
     }
+    #dialogClose {
+        position: absolute;
+        top: 0px;
+        right: 2px;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #f4d301  ;
+    }
 
 }
