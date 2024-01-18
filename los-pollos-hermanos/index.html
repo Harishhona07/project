@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Los Pollos Hermanos</title>
+    <title>Los Pollos Hermanos: Taste the Family!</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="animation.css" />
     <link rel="stylesheet" href="mediaquery.css" />
@@ -38,7 +38,7 @@
         <img id="gustavo-img" src="assets/gustavo.png" alt="" />
         <div class="text-content">
           <h2 id="message-heading">Meet the Owner/Proprietor</h2>
-          <h2 id="gustavo-name">Gustavo <span id="highlight">"GUS"</span> Fring</h2>
+          <h2 id="gustavo-name">Gustavo <span id="highlight" onmouseover="badGustavo()" onmouseout="goodGustavo()">"GUS"</span> Fring</h2>
           <p id="message">
             <i
               class="fa-sharp fa-solid fa-quote-left"
@@ -59,9 +59,7 @@
       </div>
       <section id="about-us">
         <h1 id="section-heading">ABOUT US</h1>
-
         <div class="sectionContainer2">
-          <img id="logo-img" src="assets/los-pollos-welcome.jpg" alt="" />
           <div class="text-content">
             <h2 id="heading">Los Pollos Hermanos</h2>
             <p id="description">
@@ -73,6 +71,18 @@
               locations throughout the southwest and was Gustavo Fring's major
               business concern.
             </p>
+          </div>
+          <img id="logo-img" src="assets/los-pollos-welcome.jpg" alt="" />           
+        </div>
+        <div class="sectionContainer2">
+          <img id="logo-img" src="assets/lalo-nacho-gus.png" alt="">
+          <div class="text-content">
+            <h2 id="heading">Satisfied Customers</h2>
+        <p id="description">
+          Each and everyday, we serve our customers exceptional food with impeccable services. It is to let you know that we always treat our customers
+          with courtesy and respect. Even if there is a bad customer service, <span id="highlight">We never make the same mistake twice.</span>
+        </p>
+        <a href="#testimonials"><button id="button" style="margin-top: 50px;">See Customer Testimonials</button></a>
           </div>
         </div>
       </section>
@@ -118,13 +128,17 @@
           <iframe  src="https://www.youtube.com/embed/videoseries?si=FQwoF0xeDTKz1x8L&amp;list=PLA4RIlw50s9zA0nB1NJ6rdXNK6UpVaaED" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <button id="button">View Full Playlist</button>
       </section>
+<!-- Testimonials -->
+<section id="testimonials">
+
+</section>
       <section id="footer">
         <footer>
           <img src="assets/banner.png" alt="" />
           <div class="footer-container">
             <h1 id="section-heading">Taste the Family!</h1>     
               <p id="location">4257 Isleta Boulevard Southwest Albuquerque, NM 87105</p>
-              <button id="button" onclick="showDialog()">Write a Review</button>
+              <button id="button" onclick="showDialog()">Write us a Review</button>
             <div class="social-icons">
               <i class="fa-brands fa-facebook" id="fb"></i>
               <i class="fa-brands fa-instagram" id="insta"></i>
@@ -136,7 +150,6 @@
         </footer>
       
       </section>
-    <!-- TESTIMONIAL IDEA-->
     </main>
     <div id="dialogContainer">
       <span id="dialogClose" onclick="closeDialog()"><i class="fa-solid fa-square-xmark"></i></span>
