@@ -195,7 +195,7 @@ header img {
     height: 50%;
     border: 2px solid white;
     background-image: url(assets/logo.jpg);
-    background-size: 100%;
+    background-size: 25%;
     box-shadow: 4px 4px red;
     transition: 0.5s ease;
 
@@ -232,13 +232,15 @@ header img {
     text-shadow: 1px 1px 2px black;
 }
 
-.sectionContainer1 .text-content h3 {
-    color: red;
-    font-size: 2rem;
+.sectionContainer1 .text-content #gustavo-name {
+    color: orangered;
+    font-size: 1.5rem;
     text-decoration: underline;
     margin-top: 0px;
 }
-
+.sectionContainer1 .text-content #highlight {
+    color: red;
+}
 .sectionContainer1 .text-content p {
     background-color: #f4d301;
     margin: 10px;
@@ -556,13 +558,14 @@ color: darkred;
     color: white;
     text-shadow: 1px 1px 1px black;
     animation: fadeIn 1s ease;
+
 }
 #dialogContainer form {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5px;
-    gap: 10px; /* Adjusted the gap between form elements */
+    gap: 10px; 
 }
 
 #dialogContainer form label {
@@ -573,7 +576,7 @@ color: darkred;
 #dialogContainer form input,
 #dialogContainer form textarea {
     width: 80%;
-    padding: 5px; /* Adjusted padding for the inputs */
+    padding: 5px; 
     background-color: white;
     border: 1px solid white;
     box-shadow: 4px 4px #f4d301;
@@ -587,9 +590,14 @@ color: darkred;
 }
 #dialogClose {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0px;
+    right: 2px;
     cursor: pointer;
+    font-size: 2rem;
+    color: #f4d301  ;
+}
+#dialogClose:hover {
+    color: white;
 }
  #dialogContainer form #send-button {
     background-color: #f4d301;
