@@ -136,7 +136,7 @@ header img {
     box-shadow: 2px 2px #f4d301;
 }
 
-#button {
+#button{
     background-color: #f4d301;
     padding: 10px;
     border: 2px solid #f4d301;
@@ -163,7 +163,6 @@ header img {
     padding: 20px;
     text-align: center;
 }
-
 #section-heading {
     /* font-family: 'Young Serif', serif; */
     font-family: 'JI Burrito', sans-serif;                                            
@@ -280,6 +279,8 @@ header img {
 
 #description #highlight {
     color: red;
+    text-shadow: 1px 1px white;
+    font-weight: bold;
 }
 
 .sectionContainer2 #logo-img {
@@ -421,7 +422,7 @@ header img {
 }
 
 #footer img {
-    width: 50%;
+    width: 40%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -438,7 +439,7 @@ header img {
 #footer #section-heading {
     background-color: red;
     color: #f4d301;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-top: -5px;
 }
 
@@ -507,6 +508,7 @@ color: darkred;
     transition: 0.5s ease;
     color: #f4d301;
     text-shadow: 0.5px 0.5px black;
+    font-weight: bold;
 }
 
 #footer #button:hover {
