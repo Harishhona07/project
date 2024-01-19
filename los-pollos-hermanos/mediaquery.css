@@ -30,11 +30,11 @@
     }
 
     #outdoor-img {
-        height: 50vh;
+        height: 70vh;
         width: 100%;
     }
      .image-text {
-        top:35%;
+        top:50%;
      }
      .image-text #welcome {
         font-size: 15px;
@@ -135,6 +135,18 @@
     #training #button {
         width: 50%;
         font-size: 0.8rem;
+    }
+    .testimonial-container {
+        max-width: 100%;
+    }
+    .testimonial img {
+        width: 65%;
+    }
+    .testimonial p {
+        font-size: medium;
+    }
+    .testimonial #name {
+        font-size: large;
     }
     #footer img {
         width: 100%;
