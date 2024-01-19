@@ -32,7 +32,7 @@ function dangerItem() {
     document.getElementById("gustavo-img").style.backgroundImage="url('assets/methlab.jpg')";
     document.getElementById("gustavo-img").style.backgroundSize="100% 100%";
     document.getElementById("logo-img").src="assets/los-pollos-welcome-jumpsuit.png";
-    document.getElementById("logo-img2").src="assets/methcustomers.jpeg";
+    document.getElementById("logo-img2").src="assets/tuco.png";
   }
 
   // Function to disable hover
@@ -42,3 +42,4 @@ function dangerItem() {
     imgElement.removeEventListener("mouseover", hoverImage);
     imgElement.removeEventListener("mouseout", resetImage);
   }
+  // TESTIMONIAL SCRIPT 
