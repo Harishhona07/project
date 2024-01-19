@@ -13,7 +13,7 @@ function dangerItem() {
       imgElement.src = "assets/meth.jpg";
       setTimeout(function () {
         normalItem();
-      }, 500);
+      }, 2500);
 
       document.getElementById("special-itemDetails").innerHTML = "ERror! in tThe Srver $(&#%@G#*D&%#%@%@JD&F&#&(@*#!_#)+)&@T";
       // Disable hover after the first hover
