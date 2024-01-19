@@ -24,7 +24,8 @@ function dangerItem() {
   function normalItem() {
     var imgElement = document.getElementById("special-item");
     imgElement.src = null;
-    document.getElementById("special-itemDetails").innerHTML = "ERror! in tThe Srver $(&#%@G#*D&%#%@%@JD&F&#&(@*#!_#)+)&@T";
+    document.getElementById("special-itemDetails").innerHTML = "ERror! in tThe Srver $(&#%@G#*D&%#%@%@JD&F&#&(@*#!_#)+)&@T";
+
     document.getElementById("gustavo-img").src="assets/gus.png";
     document.getElementById("gustavo-img").style.backgroundImage="url('assets/methlab.jpg')";
     document.getElementById("gustavo-img").style.backgroundSize="100% 100%";
