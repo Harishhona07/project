@@ -11,6 +11,11 @@
   </head>
 
   <body>
+    <!-- LOADER  -->
+    <div id="loader">
+  </div>
+    <!-- MAIN CONTENT  -->
+    <div id="main-content">
     <header id="header">
       <nav id="nav-bar">
         <ul>
@@ -157,7 +162,7 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
-        <button id="button">View Full Playlist</button>
+        <a href="https://youtube.com/playlist?list=PL4XYugONL7lZovnsdYCwehreahGVRkrfc&si=2eLnqpl3JdaRzKdC" target="_blank"><button id="button">View Full Playlist</button></a>
       </section>
       <!-- Testimonials -->
       <section id="testimonials">
@@ -166,45 +171,96 @@
         <div class="testimonial-container">
           <div class="testimonial-slide">
             <div class="testimonial">
-              <img src="assets/jesse testimonial.png">
-              <div id="description">
-              <p>
-                "Alright, I used to skip my classes just to be here at Los Pollos Hermanos.
-                Chicken, B**ch!
-                Tasty as hell Yo!"
-              </p>
-              <p id="name">- Jesse Pinkman</p>
-              <p><i>Student</i></p>
-            </div>
-            </div>
-            <div class="testimonial">
               <img src="assets/walt testimonial.png">
               <div id="description">
               <p>
-                "Eating crispy chicken fries at Los Pollos Hermanos, watching blue sky, absolutely amazing!
-                And well, I am the one who cooks!"
+                <i
+              class="fa-sharp fa-solid fa-quote-left"
+              style="font-size: 2rem; color: rgb(255, 49, 49)"
+            ></i>
+                Eating crispy chicken fries at Los Pollos Hermanos, watching blue sky, absolutely amazing!
+                And well, I may be the one who cooks!
+                  <i
+                class="fa-sharp fa-solid fa-quote-left"
+                style="font-size: 2rem; color: rgb(255, 49, 49); transform: rotate(180deg)"
+              ></i>
               </p>
               <p id="name">- Walter White</p>
               <p><i>Chemistry Teacher</i></p>
               </div>
             </div>
             <div class="testimonial">
+              <img src="assets/jesse testimonial.png">
+              <div id="description">
+              <p>
+                <i
+                class="fa-sharp fa-solid fa-quote-left"
+                style="font-size: 2rem; color: rgb(255, 49, 49)"
+              ></i>
+                Alright, I used to skip my classes just to be here at Los Pollos Hermanos.
+                Chicken, B**ch!
+                Tasty as hell Yo!
+                <i
+                class="fa-sharp fa-solid fa-quote-left"
+                style="font-size: 2rem; color: rgb(255, 49, 49); transform: rotate(180deg)"
+              ></i>
+              </p>
+              <p id="name">- Jesse Pinkman</p>
+              <p><i>Student</i></p>
+            </div>
+            </div>
+           
+            <div class="testimonial">
               <img src="assets/hank-testimonial.png">
               <div id="description">
               <p>
-                " Jesus! The chicken collection of Los Pollos Hermanos is more
-                prestigious than my mineral collection. I would legalise chickens even if they were drugs. "
+                <i
+                class="fa-sharp fa-solid fa-quote-left"
+                style="font-size: 2rem; color: rgb(255, 49, 49)"
+              ></i>
+               Jesus! The chicken collection of Los Pollos Hermanos is more
+                prestigious than my mineral collection. I would legalise chickens even if they were drugs. 
+                <i
+                class="fa-sharp fa-solid fa-quote-left"
+                style="font-size: 2rem; color: rgb(255, 49, 49); transform: rotate(180deg)"
+              ></i>
               </p>
               <p id="name">- Hank Schrader</p>
               <p><i>DEA Agent</i></p>
               </div>
             </div>
+              <div class="testimonial">
+                <img src="assets/walt-jr testimonial.jpeg">
+                <div id="description">
+                <p>
+                  <i
+                class="fa-sharp fa-solid fa-quote-left"
+                style="font-size: 2rem; color: rgb(255, 49, 49)"
+              ></i>
+                  I-I love Los Pollos Hermanos. I am now slowly giving up my home breakfast and having crispy chicken nuggets here.
+                  <i
+                class="fa-sharp fa-solid fa-quote-left"
+                style="font-size: 2rem; color: rgb(255, 49, 49); transform: rotate(180deg)"
+              ></i>
+                </p>
+                <p id="name">- Walter White Jr.</p>
+                <p><i>Student</i></p>
+                </div>
+              </div>
             <div class="testimonial">
               <img src="assets/lalo-testimonial.png">
               <div id="description">
               <p>
-                "The best chicken I've ever had! The crispyness, and the
-                seasoning is so...flavourful! "
+                <i
+                class="fa-sharp fa-solid fa-quote-left"
+                style="font-size: 2rem; color: rgb(255, 49, 49)"
+              ></i>
+                The best chicken I've ever had! The crispyness, and the
+                seasoning is so...flavourful! 
+                <i
+                class="fa-sharp fa-solid fa-quote-left"
+                style="font-size: 2rem; color: rgb(255, 49, 49); transform: rotate(180deg)"
+              ></i>
               </p>
               <p id="name">- Lalo Salamanca</p>
               <p><i>Businessman</i></p>
@@ -262,6 +318,8 @@
         </button>
       </form>
     </div>
+    </div> 
+    <!-- MAIN CONTENT CLOSE  -->
     <script
       src="https://kit.fontawesome.com/ee7595d267.js"
       crossorigin="anonymous"
@@ -293,7 +351,29 @@ setInterval(nextTestimonial, 10000);
       
     </script>
  <script>
+    // Function to hide the overlay and reveal the content when all images are loaded
+    function showContent() {
+        // Fade out the overlay
+        var loader = document.getElementById('loader');
 
+    // Fade out the loader
+    loader.style.opacity = '0';
+
+    // Set display to 'none' after the fade out is complete
+    setTimeout(function() {
+        loader.style.display = 'none';
+    }, 500); // Adjust the duration based on your transition time
+
+        // Display or manipulate your content here
+        document.getElementById('main-content').style.display = 'block';
+    }
+
+    // Event listener for the 'load' event on the window
+    window.addEventListener('load', function () {
+        // All images and resources are loaded
+        // Call the showContent function to reveal the content
+        showContent();
+    });
  </script>
     </body>
 </html>
