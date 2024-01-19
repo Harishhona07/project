@@ -428,10 +428,99 @@ header img {
     text-shadow: 0.5px 0.5px black;
     /* text-decoration: underline; */
 }
+
+/* TESTIMONIAL STYLES */
+#testimonials #section-heading {
+    margin-top: 0;
+}
+.testimonial-container {
+    margin-top:10%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    box-shadow: 4px 4px white;
+    text-align: center  ;
+    padding: 20px;
+    overflow: hidden;
+}
+#testimonials {
+    background-color:  #f4d301;
+    /* height: 180vh; */
+    margin-top: -5px;
+    padding: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    z-index: 0;
+    
+}
+.testimonial #description {
+    box-shadow: 4px 4px white;
+    padding: 10px;
+    background-color: #f4d301;
+    padding-top: 100px;
+}
+.testimonial-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+    flex: 0 0 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.testimonial img {
+    /* margin-top: -30%; */
+    width: 30%;
+    border-radius: 100%;
+    border: 4px solid #f4d301;
+    z-index: 1; /* Adjust the z-index to your preference */
+    position: relative;
+    margin-bottom: -100px;
+}
+
+.testimonial p {
+    font-size: large;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    /* text-shadow: 1px 1px #f4d301; */
+}
+.testimonial #name {
+    color: red;
+    font-size: larger;
+    text-shadow: 2px 2px 1px white;
+    font-weight: bold;
+}
+.testimonial-controls {
+    margin-top: 20px;
+}
+.testimonial-controls button {
+    background-color: #f4d301;
+    width: 25%;
+    margin-right: 20px;
+    padding: 10px;
+    border: 2px solid red;
+    font-size: medium;
+    box-shadow: 4px 4px white;
+    transition: 0.5s ease;
+    color: red;
+    text-shadow: 0.5px 0.5px black;
+    font-weight: bold;
+}
+.testimonial-controls button:hover {
+    background-color: white;
+    box-shadow: none;
+    transition: 0.5s ease;
+    color: red;
+    text-shadow: 0.5px 0.5px black;
+    /* text-decoration: underline; */
+}
 #footer {
     padding: 20px;
     border-top: 4px solid white;
-    background-color: #f4d301;
+    background-color: #ffdd00;
     text-align: center;
     justify-content: center;
     margin-bottom: 0px;
