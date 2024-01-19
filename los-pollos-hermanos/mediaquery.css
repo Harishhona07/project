@@ -169,6 +169,7 @@
     }
     #footer #credits {
         width: 90%;
+        font-size:medium;
     }
 
     #dialogContainer form label {
