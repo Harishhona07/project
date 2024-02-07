@@ -1,0 +1,55 @@
+@media only screen and (max-width: 700px){
+    .nav-2{
+        display: none;
+    }
+    .nav-1{
+        width: 30%;
+    }
+    .nav-3{
+        width: 70%;
+    }
+    .container .top .text h2{
+        font-size: 1rem;
+    }
+    .store-des h2{
+        font-size: 1.5rem;
+    }
+    .store-des p{
+        font-size: 0.7rem;
+    }
+    .desc-title h3{
+        font-size: 0.7rem;
+    }
+    .decs p{
+        font-size: 0.4rem;
+    }
+     .store-links li a{
+        font-size: 0.3rem;
+        padding: 3px 5px;
+     }  
+     .clothes .upper h2{
+        font-size: 2rem;
+     }
+     .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-box{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .footer .footer-box h1{
+        font-size: 0.4rem;
+    }
+     .footer .footer-box p, a{
+        font-size: 0.2rem;
+     }
+     .footer .footer-box h4{
+        font-size: 0.4rem;
+     }
+}
