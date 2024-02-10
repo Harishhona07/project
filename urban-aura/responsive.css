@@ -1,0 +1,10 @@
+/* FOR LOW WIDTH LAPTOPS */
+@media (max-width:1300px) {
+    .img-txt a {
+        font-size: 0.6rem;
+    }
+    .dialog-box {
+        padding: 40px;
+        top: 10%;
+    }
+}
