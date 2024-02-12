@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    background-color: #dddddd;
+}
+nav{
+    height: 6vh;
+    width: 100%;
+    display: flex;   
+    align-items: center; 
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    background-color:#1c1d1d;
+    padding: 40px;
+    border-bottom: 4px solid gold;
+    animation: slideDown 0.8s ease;
+}
+.nav-1{
+    height: 5vh;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.nav-1 a {
+    text-decoration: none;
+}
+.nav-1 h2 {
+    color: white;
+}
+.nav-2{
+    height: 5vh;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav li{
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+nav li a:hover {
+    color: gold;
+}
+.nav-3{
+    height: 5vh;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-3 i {
+    color: white;
+}
+.nav-3 i:hover {
+    color: gold;
+}
+.nav-3 input{
+    height: 5vh;
+    width: 20vh;
+    border: none;
+    border-top:2px solid black;
+    border-left:2px solid black;
+    border-bottom:2px solid black;
+    padding: 8px;
+    outline: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+}
+.search button{
+    width: 6vh;
+    border: none;
+    border-top:2px solid black;
+    border-right:2px solid black;
+    border-bottom:2px solid black;
+    outline: none;
+    cursor: pointer;
+    background-color: gold;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+.search button:hover {
+    width: 7vh;
+}
+.highlight-text {
+    color: gold;
+}
+.wishlistValue {
+    font-size: 0.7rem;
+    color: white;
+    /* font-weight: normal; */
+}
+.product-price {
+    font-weight: bold;
+    color: gold;
+}
+.highlight {
+    background-color: red;
+    /* Adjust other styles as needed */
+}
+#no-items {
+    margin-top: 5%;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+.cancel-button {
+    width: 40%;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 18px;
+    background-color: rgb(150, 0, 0);
+    color: white;
+}
+.cancel-button:hover {
+    background-color: white;
+    color: black;
+}
+.order-button {
+    width: 40%;
+    color: white    ;
+    background-color: black;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 18px;
+}
+.order-button:hover {
+    background-color: white;
+    color: black;
+}
