@@ -1,0 +1,15 @@
+/* FOR LOW WIDTH LAPTOPS */
+@media (max-width:1300px) {
+    .img-txt a {
+        font-size: 0.6rem;
+    }
+    .dialog-box {
+        padding: 40px;
+        top: 10%;
+    }
+    #buy-formitem1,  #buy-formitem2,  #buy-formitem3,  #buy-formitem4,  #buy-formitem5,
+    #buy-formitem6,  #buy-formitem7, #buy-formitem8 {
+        margin-top: 10%;
+        width: 25%;
+    }
+}
