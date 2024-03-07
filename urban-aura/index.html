@@ -29,6 +29,13 @@
 </head>
 
 <body>
+    <!-- PRE-LOADER  -->
+    <div id="loader">
+        
+    </div>
+
+    <!-- MAIN CONTENT  -->
+    <div id="main-content">
     <header>
         <nav>
             <div class="nav-1">
@@ -1078,11 +1085,37 @@
             <h1 id="wishlist-heading">My Wishlist</h1>
             <p id="no-items">No items in the Wishlist</p>
         </div>
-        
-        
     </div>
+
+    </div>  <!--  MAIN CONTENT CLOSE      -->
     <script src="script.js"></script>
     <script src="buy.js"></script>
+
+    <script>
+        // Function to hide the overlay and reveal the content when all images are loaded
+        function showContent() {
+            // Fade out the overlay
+            var loader = document.getElementById('loader');
+    
+        // Fade out the loader
+        loader.style.opacity = '0';
+    
+        // Set display to 'none' after the fade out is complete
+        setTimeout(function() {
+            loader.style.display = 'none';
+        }, 500); // The duration based on transition time
+    
+            // Display or manipulate the content
+            document.getElementById('main-content').style.display = 'block';
+        }
+    
+        // Event listener for the 'load' event on the window
+        window.addEventListener('load', function () {
+            // All images and resources are loaded
+            // Call the showContent function to reveal the content
+            showContent();
+        });
+     </script>
 </body>
 
 </html>
