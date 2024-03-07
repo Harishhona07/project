@@ -76,3 +76,13 @@
         transform: translateX(23%);
      }
 }
+
+@keyframes jump {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+    
+}
