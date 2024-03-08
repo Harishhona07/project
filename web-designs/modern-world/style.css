@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "MuseoModerno", sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --custom-color: #B5BAB7;
+}
+
+body {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    border-bottom: 2px solid var(--custom-color);
+}
+
+.nav-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-links1 a,
+.nav-links2 a {
+    color: var(--custom-color);
+    text-decoration: none;
+    transition: all ease .5s;
+}
+
+.nav-links1 a:hover,
+.nav-links2 a:hover {
+    color: white;
+}
+.nav-title h1 {
+    color: white;
+    text-shadow: 0px 0px 10px white;
+    cursor: pointer;
+}
+.top-container {
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.top-container h1 {
+    color: white;
+    font-size: 2rem;
+}
+.top-container h2 {
+    color: white;
+    font-size: 1.5rem;
+}
+.top-container h3 {
+    color: white;
+    font-size: 3rem;
+}
+.subscribe-container {
+    margin-top: 5%;
+    padding: 20px;
+}
+.subscribe-container button {
+    font-size: 1rem;
+    padding: 5px 20px;
+    border: 1px solid white;
+    transition: all ease .5s;
+    width: 200px;
+}
+.subscribe-container button:hover {
+    background-color: transparent;
+    color: white;
+    width: 225px;
+}
+#signup {
+    background-image: url(signUp-background.jpg);
+    background-size: 100% 100%;
+}
+.signUp-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.signUp-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.signUp-title h1 {
+    color: white;
+}
+.signUp-container .form-container {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+.signUp-container .form-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: transparent;
+    border: 2px solid var(--custom-color);
+}
+.signUp-container .form-container form .form-element {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.signUp-container .form-container form .form-element label {
+    color: var(--custom-color);
+}
+.signUp-container .form-container form .form-element input {
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--custom-color);
+    color: white;
+    padding: 5px 10px;
+}
+.signUp-container .form-container form .form-element input:focus {
+    border-color: white;
+}
+.signUp-container .form-container form .form-element button {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 10px;
+    border: 1px solid white;
+    transition: all ease .5s;
+}
+.signUp-container .form-container form .form-element button:hover {
+    width: 30%;
+    background-color: transparent;
+    color: white;
+}
