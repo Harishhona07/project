@@ -1,0 +1,177 @@
+/* Styles for screens up to 490px width */
+@media (max-width: 490px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "MuseoModerno", sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    :root {
+        --custom-color: #B5BAB7;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    #landing-page {
+        height: 100vh;
+        padding: 50px 0;
+    }
+
+    .landing-container h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .landing-container .typewriter p {
+        font-size: 0.27rem;
+    }
+
+    .landing-container button {
+        font-size: 1rem;
+    }
+
+    #rocket-page {
+        height: 100vh;
+        padding: 50px 0;
+    }
+
+    #rocket-page hr {
+        width: 50%;
+        rotate: 0deg;
+    }
+
+    .launch-icon {
+        font-size: 6rem;
+    }
+
+    nav {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
+    }
+    .top-container {
+        height: 100vh;
+        padding: 50px 0;
+    }
+
+    .top-container h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .top-container h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .top-container h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .search-container {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .subscribeBtn-container {
+        padding: 10px;
+    }
+
+    .subscribeBtn-container button {
+        width: 150px;
+        font-size: 0.9rem;
+    }
+
+    .aboutUs-container {
+        height: 100vh;
+        padding: 50px 0;
+    }
+
+    .aboutUs-content-container {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutUs-content1 {
+        width: 100%;
+    }
+    .aboutUs-content1 button {
+        width: 50%;
+    }
+    .aboutUs-content2 {
+        width: 100%;
+    }
+
+    .signUp-container {
+        height: 100vh;
+        padding: 50px 0;
+    }
+
+    .signUp-container .form-container {
+        min-width: unset;
+        width: 90%;
+    }
+    .signUp-container .form-container form .form-element .input-icon {
+        left: 85%;
+    }
+    .signUp-container .form-container form .form-element button {
+        width: 50%;
+    }
+    .signUp-container .form-container form .form-element button:hover {
+        width: 60%;
+    }
+
+    .subscribe-container form {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .subscribe-container form input {
+        width: 100%;
+    }
+
+    .subscribe-container form button {
+        width: 60%;
+    }
+    .subscribe-container form button {
+        width: 70%;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-title h1 {
+        font-size: 1.2rem;
+    }
+
+    .footer-quick-links h1,
+    .footer-contact h1,
+    .footer-more h1 {
+        font-size: 1.1rem;
+    }
+
+    .copyright {
+
+        margin-top: 20px;
+    }
+}

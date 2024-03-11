@@ -1,0 +1,610 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "MuseoModerno", sans-serif;
+    scroll-behavior: smooth;
+}
+:root {
+    --custom-color: #B5BAB7;
+}
+
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--custom-color);
+}
+
+body {
+    background-color: black;
+}
+#landing-page {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.landing-container h1 {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0px 0px 50px white;
+    animation: fade-slide-up 2s;
+}
+.landing-container .typewriter {
+    margin-top: 5%;
+    color: white;
+}
+.landing-container .typewriter p {
+    font-family: "Press Start 2P", system-ui;
+    font-size: .9rem;
+    color: lime;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid lime; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 4s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+.landing-container button {
+    margin-top: 5%;
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    border: 1px solid white;
+    transition: all ease .5s;
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+.landing-container button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 100px white;
+}
+.down-icon {
+    margin-top: 5%;
+    color: white;
+    font-size: 1rem;
+    animation: fade-in-out .5s infinite;
+}
+#rocket-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150vh;
+    background-color: black;
+}
+#rocket-page hr {
+    width: 20%;
+    rotate: 90deg;
+}
+.launch-icon {
+    font-size: 10rem;
+    color: white;
+    animation: shake .5s infinite;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 20px;
+    color: white;
+    border-top: 2px solid var(--custom-color);
+    border-bottom: 2px solid var(--custom-color);
+    backdrop-filter: blur(4px);
+    z-index: 9999;
+    top: 0;
+    position: sticky;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.nav-links1 {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links2 {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links1 a,
+.nav-links2 a {
+    color: var(--custom-color);
+    text-decoration: none;
+    transition: all ease .5s;
+    text-shadow: 1px 1px 2px black;
+}
+
+.nav-links1 a:hover,
+.nav-links2 a:hover {
+    color: white;
+}
+
+.nav-title h1 {
+    color: white;
+    text-shadow: 0px 0px 10px white;
+    cursor: pointer;
+}
+.mobile-nav {
+    display: none;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    z-index: 9999;
+  }
+  
+  .mobile-nav-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .mobile-nav-title h1 {
+    color: white;
+    text-shadow: 0px 0px 10px white;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  .mobile-nav-toggle {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .mobile-nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .mobile-nav-links a {
+    color: var(--custom-color);
+    text-decoration: none;
+    padding: 10px;
+    transition: all ease 0.3s;
+    text-shadow: 1px 1px 2px black;
+  }
+  
+  .mobile-nav-links a:hover {
+    color: white;
+  }
+  .mobile-nav-links.show {
+    display: flex;
+  }
+  .toggle-icon,
+  .cross-icon {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .cross-icon {
+    display: none;
+  }
+  
+  .show-cross .toggle-icon {
+    display: none;
+  }
+  
+  .show-cross .cross-icon {
+    display: inline-block;
+  }
+.top-container {
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-container h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+.top-container h2 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.top-container h3 {
+    color: white;
+    font-size: 3rem;
+}
+
+.search-container {
+    margin-top: 4%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-container input {
+    width: 80%;
+    outline: none;
+    border: 1px solid var(--custom-color);
+    padding: 5px 10px;
+    background-color: transparent;
+    color: white;
+    transition: all ease .5s;
+}
+
+.search-container input:focus {
+    width: 100%;
+    border-color: white;
+}
+
+.search-container button {
+    width: 25%;
+    padding: 5px 10px;
+    border: 1px solid var(--custom-color);
+    transition: all ease .5s;
+}
+
+.search-container button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.subscribeBtn-container {
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.subscribeBtn-container button {
+    font-size: 1rem;
+    padding: 5px 20px;
+    border: 1px solid white;
+    transition: all ease .5s;
+    width: 200px;
+}
+
+.subscribeBtn-container button:hover {
+    background-color: transparent;
+    color: white;
+    width: 225px;
+}
+
+#about-us {
+    background-image: url(aboutUs-background.jpg);
+    background-size: 100% 100%;
+}
+
+.aboutUs-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.aboutUs-title h1 {
+    color: white;
+}
+
+.aboutUs-content-container {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutUs-content1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.aboutUs-content1 p {
+    color: white;
+    text-align: justify;
+}
+.aboutUs-content1 button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    padding: 5px 10px;
+    border: 1px solid white;
+    transition: all ease .5s;
+}
+.aboutUs-content1 button:hover {
+    background-color: transparent;
+    color: white;
+}
+.aboutUs-content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 20%;
+    background-color: whitesmoke;
+    padding: 10px;
+    border: 1px solid white;
+    gap: 10px;
+}
+.aboutUs-content2 button {
+    padding: 5px;
+    background-color: black;
+    border: 1px solid black;
+    font-size: .9rem;
+    transition: all ease .5s;
+    color: white;
+}
+.aboutUs-content2 button:hover {
+    background-color: transparent;
+    color: black;
+}
+#signup {
+    background-image: url(signUp-background.jpg);
+    background-size: 100% 100%;
+}
+
+.signUp-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.signUp-title {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.signUp-title h1 {
+    color: white;
+}
+
+.signUp-container .form-container {
+    max-width: 700px;
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+
+.signUp-container .form-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid var(--custom-color);
+    transition: all ease .3s;
+}
+
+.signUp-container .form-container form:hover {
+    border-color: white;
+}
+
+.signUp-container .form-container form .form-element {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 20px;
+}
+
+.signUp-container .form-container form .form-element label {
+    color: var(--custom-color);
+}
+
+.signUp-container .form-container form .form-element .input-field {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.signUp-container .form-container form .form-element .input-icon {
+    color: white;
+    position: absolute;
+    left: 90%;
+    padding: 5px 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.signUp-container .form-container form .form-element .input-field input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--custom-color);
+    color: white;
+    padding: 5px 10px;
+}
+
+.signUp-container .form-container form .form-element input:focus {
+    border-color: white;
+}
+
+.signUp-container .form-container form .form-element button {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 10px;
+    border: 1px solid white;
+    transition: all ease .5s;
+}
+
+.signUp-container .form-container form .form-element button:hover {
+    width: 30%;
+    background-color: transparent;
+    color: white;
+}
+
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.subscribe-container .subscribe-title {
+    display: flex;
+    text-align: center;
+}
+.subscribe-container .subscribe-title h1 {
+    color: white;
+    font-size: 1.5rem;
+}
+.subscribe-container form {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding: 10px;
+}
+.subscribe-container form input {
+    width: 70%;
+    outline: none;
+    border: 1px solid white;
+    padding: 5px 10px;
+
+}
+.subscribe-container form input::placeholder {
+    color: black;
+    text-shadow: 1px 1px 1px var(--custom-color);
+}
+.subscribe-container form button {
+    width: 15%;
+    border: 1px solid var(--custom-color);
+    background-color: transparent;
+    color: white;
+    padding: 5px 10px;
+    transition: all ease .5s;
+}
+.subscribe-container form button:hover {
+    width: 20%;
+}
+footer {
+    padding: 20px;
+    background-color: transparent;
+    border: 2px solid var(--custom-color);
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+.footer-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.footer-title h1 {
+    font-size: 1.5rem;
+}
+.footer-quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-quick-links a {
+    color: var(--custom-color);
+    text-decoration: none;
+    transition: all ease .5s;
+}
+.footer-quick-links h1{
+    color: white;
+    font-size: 1.4rem;
+}
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+.footer-contact .social-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-contact h1 {
+    font-size: 1.4rem;
+}
+.footer-contact a {
+    font-size: 20px;
+    color: var(--custom-color);
+    text-decoration: none;
+    transition: all ease .5s;
+}
+.footer-more {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-more h1 {
+    color: white;
+    font-size: 1.4rem;
+}
+.footer-more a {
+    color: var(--custom-color);
+    text-decoration: none;
+    transition: all ease .5s;
+}
+.footer-more a:hover,.footer-contact a:hover,
+.footer-quick-links a:hover {
+    color: white;
+}
+.copyright {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+}
+.copyright p a {
+    text-decoration: none;
+    color: var(--custom-color);
+    transition: all ease .5s;
+}
+.copyright p a:hover {
+    color: white;
+    text-decoration: underline 2px;
+}
