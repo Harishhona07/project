@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'quicksand';
+    font-weight: 500;
+}
+
+:root {
+    --custom-color-gold: #FFD700;
+}
+
+body {
+    background-color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.heading {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    animation: fade-in-down 1s ease;
+}
+
+.heading h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.heading p {
+    color: white;
+}
+
+hr {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    animation: fade-in-up 2.5s ease;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    gap: 10px;
+    transition: .2s all ease;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 50px gray;
+}
+
+.card h1 {
+    font-size: 25px;
+}
+
+.card img {
+    width: 100%;
+    border: 2px solid transparent;
+}
+
+.card img:hover {
+    border: 2px solid gray;
+}
+
+.card .details {
+    color: rgb(70, 67, 67);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    gap: 10px;
+}
+
+.card .btn {
+    width: 50%;
+    font-size: 1rem;
+    padding: 5px 20px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+
+.card a {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.card .btn:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+/* ANIMATIONS  */
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fade-in-down {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
