@@ -11,7 +11,25 @@
   --custom-gray-color: #b8c2d3;
   --custom-dark-color: #0d1117;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--custom-dark-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--custom-gray-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
 body {
   background-color: var(--custom-dark-color)
 }
