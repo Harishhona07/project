@@ -1,0 +1,91 @@
+@media screen and (max-width: 490px) {
+    nav {
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    .nav-title {
+      width: 100%;
+      justify-content: center;
+    }
+  .nav-title a h1 {
+    font-size: 2rem;
+  }
+    .nav-links {
+      width: 100%;
+      margin-top: 20px;
+      align-items: center;
+      text-align: center;
+    }
+    .nav-links a {
+        font-size: .9rem;
+        word-spacing: 100px;
+    }
+  
+    .nav-search {
+      width: 100%;
+      margin-top: 40px;
+    }
+    .top-content-container {
+      padding: 20px;
+    }
+  
+    .top-content {
+      flex-direction: column;
+      align-items: center;
+      padding: 5px;
+    }
+  
+    .top-content img {
+      width: 100%;
+    }
+  
+    .top-content .top-text {
+      width: 100%;
+    }
+    .top-content .top-text h1 {
+        font-size: 2rem;
+    }
+    .top-content .top-text p {
+        font-size: 1rem;
+    }
+    .top-content .top-text button {
+        font-size: 1rem;
+    }
+    .shop-container h1{
+        font-size: 1.5rem;
+    }
+    .shop-item-container .item {
+      width: 100%;
+    }
+  
+    footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-content1 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .footer-content2 {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      text-align: center;
+    }
+    .quick-links, .contact, .subscribe {
+      margin-bottom: 20px;
+    }
+    .quick-links h1, .contact h1, .subscribe h1 {
+        font-size: 1.4rem;
+    }
+    .quick-links a, .contact a, .subscribe a {
+        font-size: 1rem;
+    }
+    .copyright {
+        flex-direction: column;
+        gap: 5px;
+    }
+  }
